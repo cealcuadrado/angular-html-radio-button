@@ -1,0 +1,15 @@
+<form #myForm="ngForm" (submit)="onSubmit(myForm.value)">
+  <div class="form-group">
+    <input type="radio" id="male" name="gender" ngModel/>
+    <label for="male">Male</label>
+  </div>
+  <div class="form-group">
+    <input type="radio" id="female" name="gender" ngModel />
+    <label for="female">Female</label>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">
+      Submit
+    </button>
+  </div>
+</form>
